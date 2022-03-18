@@ -7,13 +7,13 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import random
 import time
-from fake_useragent import UserAgent
+# from fake_useragent import UserAgent
 # from bs4 import BeautifulSoup
 
 
 
 url = 'https://www.google.com/'
-
+#
 # useragent = UserAgent()
 options = webdriver.ChromeOptions()
 # options.add_argument(f"user-agent={useragent.random}")
