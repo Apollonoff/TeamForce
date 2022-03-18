@@ -1,4 +1,7 @@
 #pip install selenium
+#pip install fake_useragent
+
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -9,11 +12,11 @@ from fake_useragent import UserAgent
 
 
 
-url = 'https://www.nomerogram.ru/'
+url = 'https://www.google.com/'
 
-useragent = UserAgent()
+# useragent = UserAgent()
 options = webdriver.ChromeOptions()
-options.add_argument(f"user-agent={useragent.random}")
+# options.add_argument(f"user-agent={useragent.random}")
 # options.add_argument('headless')
 
 #set proxy
@@ -22,6 +25,8 @@ options.add_argument(f"user-agent={useragent.random}")
 driver = webdriver.Chrome(options=options)
 
 try:
+    driver.get(url=url)
+    time.sleep(10)
 
 except Exception as ex:
     print(ex)
@@ -32,3 +37,5 @@ finally:
 
 
 # if __name__ == '__main__':
+#     name = ''
+#     selenium_bot_father(name)
