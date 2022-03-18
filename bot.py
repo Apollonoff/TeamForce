@@ -25,14 +25,15 @@ async def send_welcome(message: types.Message):
 
 @dp.message_handler()
 async def echo(message: types.Message):
-    if message.text != "/create":
-         mes = message.text
-         print(mes)
+     mes = message.text
+     print(mes)
 
 @dp.message_handler(commands='create')
 async def create_new_bot(message: types.Message):
     await message.reply("Введите имя бота")
     await echo()
+
+
 
 
 def main():
