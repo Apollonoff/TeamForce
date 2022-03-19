@@ -7,7 +7,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 bot =Bot(
-    token='1173555697:AAEaopgYWpRjDn9WBuXHup5hwtCp5Dz6ehI',
+    token='',
 )
 
 dp = Dispatcher(bot=bot,)
